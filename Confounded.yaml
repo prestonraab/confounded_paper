@@ -1,0 +1,16 @@
+title: Adversarial deep neural networks remove nonlinear batch effects from gene-expression data
+authors:
+  - "Jonathan B. Dayton^1^"
+  - "Emi Ford^1^"
+  - "Stephen R. Piccolo^1^"
+author_meta:
+  - "1 - Department of Biology, Brigham Young University, Provo, UT, 84602, USA"
+  - "\\* - Please address correspondence to S.R.P. at stephen\\_piccolo@byu.edu. Phone: 801-422-7116."
+figures:
+  - label: "fig:hello_diagram"
+    path: "Figures/hello_diagram.pdf"
+    title: |
+      Illustration of tool descriptions for printing simple greetings.
+    caption: |
+      In the examples associated with this article, we provide tool descriptions that illustrate how to print custom greetings at the command line. These diagrams illustrate the `02_hello.cwl` (**A**) and `03_hello.cwl` (**B**) examples. In **A**, the tool description indicates which inputs that must be specified, along with a template for executing the command; it also indicates that a message will be printed to standard output and that this message should be stored in a file called `02_output.txt`. The `hello_objects_age.yml` input-object file stores values for a particular invocation of the tool. In **A**, the `cwltool` workflow engine uses the host computer's operating system to execute the tool; thus the echo command must be supported on that operating system. In **B**, the tool description defines a software container environment; thus `cwltool` executes the command within a container, which provides the echo command (packaged with the Debian Linux operating system).
+    supplementary: False

@@ -1,0 +1,47 @@
+\centering
+\begin{tabular}{l|l|r|r|r}
+\hline
+Dataset & Adjustment & Baseline & GaussianNB & RandomForest\\
+\hline
+\rowcolor{gray!6}   & unadjusted &  & 0.908 & 0.859\\
+\cline{2-2}
+\cline{4-5}
+ & scale &  & 0.649 & 0.721\\
+\cline{2-2}
+\cline{4-5}
+\rowcolor{gray!6}   & combat &  & 0.697 & 0.743\\
+\cline{2-2}
+\cline{4-5}
+\multirow[t]{-4}{*}{\raggedright\arraybackslash bladderbatch} & confounded & \multirow[t]{-4}{*}{\raggedleft\arraybackslash 0.702} & 0.698 & 0.721\\
+\cline{1-5}
+\rowcolor{gray!6}   & unadjusted &  & 0.661 & 0.674\\
+\cline{2-2}
+\cline{4-5}
+ & scale &  & 0.632 & 0.661\\
+\cline{2-2}
+\cline{4-5}
+\rowcolor{gray!6}   & combat &  & 0.647 & 0.647\\
+\cline{2-2}
+\cline{4-5}
+ & confounded &  & 0.605 & 0.690\\
+\cline{2-2}
+\cline{4-5}
+\rowcolor{gray!6}  \multirow[t]{-5}{*}{\raggedright\arraybackslash gse37199} & NA & \multirow[t]{-5}{*}{\raggedleft\arraybackslash 0.667} & 0.605 & 0.669\\
+\cline{1-5}
+ & unadjusted &  & 0.827 & 0.861\\
+\cline{2-2}
+\cline{4-5}
+\rowcolor{gray!6}   & scale &  & 0.826 & 0.865\\
+\cline{2-2}
+\cline{4-5}
+\multirow[t]{-3}{*}{\raggedright\arraybackslash noisy} & combat & \multirow[t]{-3}{*}{\raggedleft\arraybackslash 0.114} & 0.827 & 0.872\\
+\cline{1-5}
+\rowcolor{gray!6}   & unadjusted &  & 0.625 & 0.763\\
+\cline{2-2}
+\cline{4-5}
+ & scale &  & 0.603 & 0.758\\
+\cline{2-2}
+\cline{4-5}
+\rowcolor{gray!6}  \multirow[t]{-3}{*}{\raggedright\arraybackslash tcga} & combat & \multirow[t]{-3}{*}{\raggedleft\arraybackslash 0.698} & 0.659 & 0.742\\
+\hline
+\end{tabular}
