@@ -1,6 +1,6 @@
 # Abstract
 
-Gene-expression profiling enables researchers to quantify transcription levels in cells, thus providing insights into functional mechanisms of diseases and other biological processes. However, due to the high dimensionality of these data and the sensitivity of measuring equipment, expression data often contain unwanted confounding effects that can skew analyses. For example, collecting data in multiple runs can cause nontrivial differences in the data known as batch effects. In addition, covariates that are not of interest to the study may have strong effects on gene expression. These confounding effects may be influenced by higher-order interactions that are nonlinear, whereas the most commonly used batch-correction methods use linear models. We created *Confounded*, which uses an adversarial variational autoencoder to learn latent representations of the data in an unsupervised manner while simultaneously optimizing against a loss function that penalizes its ability to discriminate batch labels. We tested the model on simulated data and [TODO]three gene-expression datasets and compared against other batch-adjustment algorithms.[TODO:Results,Discussion] Our software is licensed under the Apache 2.0 license and is freely available at https://github.com/jdayton3/Confounded[TODO].
+Gene-expression profiling enables researchers to quantify transcription levels in cells, thus providing insights into functional mechanisms of diseases and other biological processes. However, due to the high dimensionality of these data and the sensitivity of measuring equipment, expression data often contain unwanted confounding effects that can skew analyses. For example, collecting data in multiple runs can cause nontrivial differences in the data known as batch effects. In addition, covariates that are not of interest to the study may have strong effects on gene expression. These confounding effects may be influenced by higher-order interactions that are nonlinear, whereas the most commonly used batch-correction methods use linear models. We created *Confounded*, which uses an adversarial variational autoencoder to learn latent representations of the data in an unsupervised manner while simultaneously optimizing against a loss function[TODO] that penalizes its ability to discriminate confounders. We tested the model on simulated data and [TODO]three gene-expression datasets and compared against other batch-adjustment algorithms.[TODO:Results,Discussion] Our software is licensed under the Apache 2.0 license and is freely available at https://github.com/jdayton3/Confounded[TODO].
 
 %Furthermore, when researchers integrate datasets from diverse sources...
 
@@ -19,6 +19,8 @@ TODO:
     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2950414/
     https://academic.oup.com/bib/article/22/3/bbaa169/5892357?login=true
     Perhaps this one though maybe focused on multimodal: https://www.frontiersin.org/articles/10.3389/fgene.2017.00084/full
+  Cite this paper: https://arxiv.org/pdf/1802.06309.pdf
+  This paper has a good background specific to medicine: https://arxiv.org/pdf/2110.00603.pdf
 
 Methods exist to address each of these problems; however,...
 
