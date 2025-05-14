@@ -1,6 +1,10 @@
 library(readr)
 library(dplyr)
 
+# Corrects for this: Error: The size of the connection buffer (131072)
+# was not large enough to fit a complete line
+Sys.setenv(VROOM_CONNECTION_SIZE = "500000")
+
 rnaseq_file_path = commandArgs()[7]
 mutation_file_path = commandArgs()[8]
 cancer_types_file_path = commandArgs()[9]
