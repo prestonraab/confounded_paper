@@ -9,7 +9,9 @@ expression_tsv=/tmp/GSE37199_Expression_BatchUnadjusted.txt.gz
 clinical_tsv=/tmp/GSE37199_Clinical.txt
 out_csv=/data/gse37199/unadjusted.csv
 
-wget https://osf.io/av3yt/download -O $raw_loc
+if [ ! -f "$raw_loc" ]; then
+    wget https://osf.io/av3yt/download -O "$raw_loc"
+fi
 tar -zxvf $raw_loc -C /tmp
 
 printf "\033[0;32mTidying the GSE37199 dataset\033[0m\n"
