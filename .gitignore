@@ -14,3 +14,4 @@ code/data
 metrics
 figures
 *.gz
+/code/tmp
