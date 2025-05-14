@@ -4,7 +4,7 @@ set -e
 
 image=srp33/confounded-paper:version1
 
-docker build -t $image .
+docker build -t $image . --no-cache-filter confounded-install 
 
 mkdir -p data/simulated_expression data/mnist data/bladderbatch data/gse37199 data/tcga
 mkdir -p $(pwd)/../metrics
