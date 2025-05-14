@@ -6,9 +6,9 @@ mutation_file_path = commandArgs()[8]
 cancer_types_file_path = commandArgs()[9]
 out_file_path = commandArgs()[10]
 
-rnaseq = read_tsv(rnaseq_file_path)
-mutations = read_tsv(mutation_file_path)
-cancer_types = read_tsv(cancer_types_file_path)
+rnaseq = read_tsv(rnaseq_file_path, show_col_types = FALSE)
+mutations = read_tsv(mutation_file_path, show_col_types = FALSE)
+cancer_types = read_tsv(cancer_types_file_path, show_col_types = FALSE)
 
 unique_sample_ids = intersect(intersect(pull(rnaseq, Sample), pull(mutations, Sample)), pull(cancer_types, Sample))
 
