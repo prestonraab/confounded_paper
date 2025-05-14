@@ -13,3 +13,4 @@ code/data
 **/__pycache__
 metrics
 figures
+*.gz
