@@ -17,6 +17,7 @@ chmod 777 $(pwd)/../figures
 docker run -i --rm \
   --user $(id -u):$(id -g) \
   -v $(pwd)/data:/data \
+  -v $(pwd)/tmp:/tmp \
   -v $(pwd)/../metrics:/output/metrics \
   -v $(pwd)/../figures:/output/figures \
   $image
