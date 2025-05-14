@@ -70,4 +70,4 @@ COPY metrics /metrics
 COPY figures /figures
 COPY all.sh /
 
-ENTRYPOINT /all.sh
+ENTRYPOINT ["/all.sh"]
